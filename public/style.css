@@ -1,0 +1,226 @@
+
+* {
+  --bg-parchment: #F4F1E1;
+  --retro-orange: #FF6B35;
+  --classic-navy: #004E98;
+  --mustard-yellow: #ECA72C;
+  --dark-border: #111827;
+  --card-bg: #c5dfce;
+}
+
+body {
+  background-color: var(--bg-parchment);
+  color: var(--dark-border);
+  font-family: 'Public Sans', sans-serif;
+  padding-bottom: 3rem;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+/* Neo-Brutalism Global Utilities */
+.brutal-card {
+  background-color: var(--card-bg);
+  border: 3px solid var(--dark-border);
+  box-shadow: 5px 5px 0px var(--dark-border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brutal-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px var(--dark-border);
+}
+
+.brutal-btn-primary {
+  background-color: var(--retro-orange);
+  color: #FFFFFF !important;
+  border: 3px solid var(--dark-border);
+  box-shadow: 4px 4px 0px var(--dark-border);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.15s ease;
+}
+
+.brutal-btn-primary:hover, .brutal-btn-primary:focus {
+  background-color: #e55a28;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--dark-border);
+}
+
+.brutal-btn-secondary {
+  background-color: var(--classic-navy);
+  color: #FFFFFF !important;
+  border: 3px solid var(--dark-border);
+  box-shadow: 4px 4px 0px var(--dark-border);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.15s ease;
+}
+
+.brutal-btn-secondary:hover, .brutal-btn-secondary:focus {
+  background-color: #003c75;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--dark-border);
+}
+
+.brutal-badge {
+  border: 2px solid var(--dark-border);
+  box-shadow: 2px 2px 0px var(--dark-border);
+  font-weight: 700;
+  padding: 0.35em 0.65em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.badge-futsal {
+  background-color: var(--mustard-yellow);
+  color: var(--dark-border);
+}
+
+.badge-badminton {
+  background-color: var(--retro-orange);
+  color: #FFF;
+}
+
+.badge-basket {
+  background-color: var(--classic-navy);
+  color: #FFF;
+}
+
+.badge-padel {
+  background-color: #2EC4B6;
+  color: var(--dark-border);
+}
+
+.badge-license {
+  background-color: #E76F51;
+  color: #FFF;
+}
+
+.brutal-input, .brutal-select {
+  border: 3px solid var(--dark-border);
+  border-radius: 0;
+  background-color: #FFF;
+  font-weight: 600;
+  padding: 0.6rem 0.8rem;
+}
+
+.brutal-input:focus, .brutal-select:focus {
+  border-color: var(--dark-border);
+  box-shadow: 4px 4px 0px var(--retro-orange);
+  outline: none;
+}
+
+/* Header & Banner */
+.retro-header {
+  border-bottom: 4px solid var(--dark-border);
+  background-color: var(--mustard-yellow);
+  box-shadow: 0 4px 0 var(--dark-border);
+}
+
+.hero-banner {
+  background-color: var(--retro-orange);
+  border: 4px solid var(--dark-border);
+  box-shadow: 8px 8px 0px var(--dark-border);
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  font-size: 5rem;
+  font-weight: 900;
+  opacity: 0.15;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Coach Card Spec */
+.coach-avatar {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border: 3px solid var(--dark-border);
+  box-shadow: 3px 3px 0px var(--dark-border);
+  background-color: var(--bg-parchment);
+}
+
+.coach-status {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-border);
+}
+
+.status-active {
+  background-color: #2A9D8F;
+}
+
+.status-inactive {
+  background-color: #E76F51;
+}
+
+/* Table Style */
+.brutal-table-container {
+  border: 3px solid var(--dark-border);
+  box-shadow: 6px 6px 0px var(--dark-border);
+  background-color: #FFF;
+}
+
+.brutal-table {
+  margin-bottom: 0;
+}
+
+.brutal-table th {
+  background-color: var(--classic-navy);
+  color: #FFF;
+  border-bottom: 3px solid var(--dark-border);
+  border-right: 2px solid var(--dark-border);
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+}
+
+.brutal-table td {
+  border-bottom: 2px solid var(--dark-border);
+  border-right: 2px solid var(--dark-border);
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+/* Modal Customization */
+.modal-content.brutal-modal {
+  border: 4px solid var(--dark-border);
+  box-shadow: 10px 10px 0px var(--dark-border);
+  border-radius: 0;
+  background-color: var(--bg-parchment);
+}
+
+.modal-header.brutal-modal-header {
+  border-bottom: 3px solid var(--dark-border);
+  background-color: var(--retro-orange);
+  color: #FFF;
+}
+
+.modal-footer.brutal-modal-footer {
+  border-top: 3px solid var(--dark-border);
+  background-color: #FFF;
+}
+
+/* Toast Notification */
+.brutal-toast {
+  border: 3px solid var(--dark-border) !important;
+  box-shadow: 5px 5px 0px var(--dark-border) !important;
+  background-color: var(--mustard-yellow) !important;
+  color: var(--dark-border) !important;
+  font-weight: 700;
+}
